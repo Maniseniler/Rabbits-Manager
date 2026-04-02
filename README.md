@@ -43,8 +43,8 @@ This application centralizes all farm operations, allowing you to track rabbits,
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR-USERNAME/Rabbit-Manager-Dashboard.git
-cd Rabbit-Manager-Dashboard
+git clone https://github.com/YOUR-USERNAME/Rabbit-Manager.git
+cd Rabbit-Manager
 ```
 
 2. Install dependencies:
