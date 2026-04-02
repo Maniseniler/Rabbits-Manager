@@ -8,6 +8,7 @@ Rabbit Manager Dashboard is a powerful desktop application designed to simplify 
 
 Manage your rabbit farm with ease using **Rabbit Manager Dashboard**.  
 This application centralizes all farm operations, allowing you to track rabbits, monitor breeding history, manage customers, generate invoices, and analyze your farm performance through an intuitive and modern interface.
+<img width="1605" height="1110" alt="image" src="https://github.com/user-attachments/assets/c52ffe87-84bd-4c6c-bfdd-e1d58e21218a" />
 
 [![Watch Demo](<img width="1605" height="1110" alt="image" src="https://github.com/user-attachments/assets/06a18b8c-7993-405a-ab8c-4fb335738b55" />)](https://www.youtube.com/watch?v=abc123XYZ)
 
