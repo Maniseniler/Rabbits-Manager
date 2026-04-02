@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Cages_Tree_View_Main</class>
+ <widget class="QDialog" name="Cages_Tree_View_Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1031</width>
+    <height>867</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1031</width>
+    <height>867</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1031</width>
+    <height>867</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1031</width>
+     <height>867</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1031</width>
+     <height>867</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1031</width>
+     <height>867</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(30, 30, 30);
+	color: rgb(255, 255, 255);
+	font: 75 9pt &quot;Orbitron&quot;;
+	border-style: outset;
+    	border-radius: 50px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>961</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>301</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 15pt &quot;Acme&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Cages Tree Viewer Window</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit_Cages_Tree_View">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>30</y>
+      <width>33</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Orbitron</family>
+      <pointsize>9</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_Red.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_White.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>50</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QFrame" name="TreeFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>1031</width>
+      <height>787</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1031</width>
+      <height>787</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1031</width>
+      <height>787</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>991</width>
+       <height>741</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="TreeVerticalLayout"/>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="ScreenShot_Button">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>33</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Orbitron</family>
+      <pointsize>9</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Screenshot_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Screenshot_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Screenshot_Green.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>50</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>10</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Exit_Cages_Tree_View</sender>
+   <signal>clicked()</signal>
+   <receiver>Cages_Tree_View_Main</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>955</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>501</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

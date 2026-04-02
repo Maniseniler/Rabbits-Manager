@@ -1,0 +1,4297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Rabbit_View_Main</class>
+ <widget class="QDialog" name="Rabbit_View_Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1031</width>
+    <height>867</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1031</width>
+    <height>867</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1031</width>
+    <height>867</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1031</width>
+     <height>867</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1031</width>
+     <height>867</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1031</width>
+     <height>867</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(30, 30, 30);
+	color: rgb(255, 255, 255);
+	font: 75 9pt &quot;Orbitron&quot;;
+	border-style: outset;
+    	border-radius: 50px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="Breeding_Info_Frame">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>331</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>331</width>
+      <height>691</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>331</width>
+      <height>691</height>
+     </size>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+	font: 75 10pt &quot;Acme&quot;;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="YearSelection_Rabbit">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>6</y>
+       <width>120</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox{
+	border: 2px solid white;
+	border-radius:6px;
+	padding:1px 18px 1px 3px;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	padding-left: 15px;
+	selection-background-color: #2980B9;
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>2024</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2025</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2026</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2027</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2028</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2029</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2030</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2031</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2032</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2033</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2034</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2035</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2036</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2037</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2038</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2039</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2040</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+      </property>
+     </item>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>38</y>
+       <width>291</width>
+       <height>638</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="Rabbit_Detail_Grid">
+      <item row="3" column="0">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_10">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>October</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_11">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>November</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_2">
+        <property name="minimumSize">
+         <size>
+          <width>93</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>93</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>February</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_8">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>August</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_6">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>June</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_7">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>July</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_9">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>September</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_4">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>April</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_3">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>March</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_1">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string> January</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_5">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>May</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QTableWidget" name="Rabbit_Detail_Table_12">
+        <property name="minimumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>92</width>
+          <height>156</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-radius:10px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	background-color: rgb(143, 143, 143);
+	alternate-background-color: rgb(176, 237, 251);
+	border:0px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>10</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>December</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Total_Bunnies_Label">
+     <property name="geometry">
+      <rect>
+       <x>157</x>
+       <y>7</y>
+       <width>159</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>159</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>159</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Total</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Activity_Frame">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>20</y>
+      <width>207</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>207</width>
+      <height>46</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>207</width>
+      <height>46</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(48, 48, 48);
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="Exit_Customer_View">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>6</y>
+       <width>33</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>33</width>
+       <height>33</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>33</width>
+       <height>33</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Orbitron</family>
+       <pointsize>9</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_Red.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_White.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="shortcut">
+      <string>Esc</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>50</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Edit_Rabbit">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>6</y>
+       <width>33</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>33</width>
+       <height>33</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>33</width>
+       <height>33</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Orbitron</family>
+       <pointsize>9</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_Blue.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_White.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>50</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Delete_Rabbit">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>6</y>
+       <width>33</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>33</width>
+       <height>33</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>33</width>
+       <height>33</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Orbitron</family>
+       <pointsize>9</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Delete_Pink.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Delete_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Delete_White.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+S</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>50</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="General_Info_Frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>271</width>
+      <height>780</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>271</width>
+      <height>780</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>271</width>
+      <height>780</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="Breed_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Breed_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Rabbit_Tag.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Breed_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Breed</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Born_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Born_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Calendar_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Born_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Born</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Color_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Color_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Rabbit_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Color_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Color</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Father_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Father_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Rabbit_Tree_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Father_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Father</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Bunnies_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>470</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Bunnies_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Rabbits_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Bunnies_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Bunnies</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Facture_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>620</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Facture_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Facture_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Facture_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Facture</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Customer_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>670</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Customer_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Customer_Whitre.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Customer_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Customer</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Bought_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>570</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Bought_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/TND_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Bought_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Bought</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Sold_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>720</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Sold_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/TND_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Sold_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sold</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Age_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Age_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Calendar_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Age_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Age</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Siblings_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>420</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Siblings_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Rabbits_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Siblings_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Siblings</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Mother_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Mother_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Rabbit_Tree_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Mother_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Mother</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Gender_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Gender_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Gender_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Gender_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Gender</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Cage_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>520</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Cage_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Cages_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Cage_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cage</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Generation_Frame">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>370</y>
+       <width>230</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>230</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Generation_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Rabbit_Tree_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Generation_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>169</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>169</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Generation</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="ID_Frame">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>158</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>158</width>
+      <height>44</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>158</width>
+      <height>44</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #2F2F2F;
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="ID_Label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>6</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>121</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>121</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>ID : </string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Notes_Frame">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>690</y>
+      <width>271</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>271</width>
+      <height>141</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>271</width>
+      <height>141</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="Notes_Label_Frame">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>6</y>
+       <width>41</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>41</width>
+       <height>131</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>41</width>
+       <height>131</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #2F2F2F;
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Notes_Text_Label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>2</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;N&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Notes_Text_Label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>23</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;O&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Notes_Text_Label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>46</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;T&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Notes_Text_Label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>66</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;E&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Notes_Text_Label_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;S&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPlainTextEdit" name="Rabbit_Notes_PleinText">
+     <property name="geometry">
+      <rect>
+       <x>48</x>
+       <y>6</y>
+       <width>220</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>220</width>
+       <height>131</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>220</width>
+       <height>131</height>
+      </size>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>UpArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPlainTextEdit{
+	background-color: rgb(69, 69, 69);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Rabbit_Tree_Frame">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>270</y>
+      <width>351</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>351</width>
+      <height>561</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>351</width>
+      <height>561</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTreeWidget" name="Rabbit_Detail_Tree">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>341</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>341</width>
+       <height>541</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>341</width>
+       <height>541</height>
+      </size>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QHeaderView::section{
+	font: 75 10pt &quot;Orbitron&quot;;
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #6c6c6c;
+	border-color: rgb(108, 108, 108);
+	border-top-color: rgb(108, 108, 108);
+	border-right-color: rgb(108, 108, 108);
+	border-bottom-color: rgb(108, 108, 108);
+	border-left-color: rgb(108, 108, 108);
+	border-radius:10px;
+}
+QHeaderView::section:checked{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTreeWidget{
+	font: 75 10pt &quot;Segoe UI&quot;;
+	background-color: rgb(108, 108, 108);
+	border:0px;
+	text-align: center;
+}
+QTreeView::branch:has-siblings:!adjoins-item {
+	border-image: url(:/Icons/Better_Tree/vline.png) 0;
+}
+QTreeView::branch:has-siblings:adjoins-item {
+	border-image: url(:/Icons/Better_Tree/branch-more.png);
+}
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+	border-image: url(:/Icons/Better_Tree/branch-end.png);
+}
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+	border-image: none;
+	image: url(:/Icons/Better_Tree/branch-closed.png);
+}
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+	border-image: none;
+	image: url(:/Icons/Better_Tree/branch-open.png);
+}</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>true</bool>
+     </property>
+     <property name="showDropIndicator" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="dragDropOverwriteMode">
+      <bool>true</bool>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::NoDragDrop</enum>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::ExtendedSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerItem</enum>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>true</bool>
+     </property>
+     <property name="uniformRowHeights">
+      <bool>false</bool>
+     </property>
+     <property name="itemsExpandable">
+      <bool>true</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="animated">
+      <bool>true</bool>
+     </property>
+     <property name="headerHidden">
+      <bool>false</bool>
+     </property>
+     <attribute name="headerCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Born</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Mother</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Father</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Siblings</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignLeading|AlignVCenter</set>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>91</green>
+         <blue>44</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bunnies</string>
+      </property>
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>99</red>
+         <green>92</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Photos_Infos_Frame">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>79</y>
+      <width>351</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>351</width>
+      <height>181</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>351</width>
+      <height>181</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(30, 30, 30);
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="Rabbit_Avatar_Frame">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>119</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>119</width>
+       <height>161</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>119</width>
+       <height>161</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #D9D9D9;
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 0, 0);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Avatar_Label">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>10</y>
+        <width>101</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Rabbit_Green.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Type_Frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>11</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Type_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Settings_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Type_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>139</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>139</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>139</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Type</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Status_Frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>71</y>
+       <width>200</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="Rabbit_Status_Icon">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>8</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/Icons/Actions_White.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Rabbit_Status_Label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>9</y>
+        <width>139</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>139</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>139</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Status : </string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="Gallery_Button">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>18</x>
+       <y>133</y>
+       <width>33</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>33</width>
+       <height>33</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>33</width>
+       <height>33</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Orbitron</family>
+       <pointsize>9</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Gallery_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Gallery_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Gallery_Green.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>50</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Male_Info_Frame">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>331</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>331</width>
+      <height>691</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>331</width>
+      <height>691</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+	font: 75 10pt &quot;Acme&quot;;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <zorder>Breeding_Info_Frame</zorder>
+   <zorder>Activity_Frame</zorder>
+   <zorder>General_Info_Frame</zorder>
+   <zorder>ID_Frame</zorder>
+   <zorder>Rabbit_Tree_Frame</zorder>
+   <zorder>Photos_Infos_Frame</zorder>
+   <zorder>Male_Info_Frame</zorder>
+   <zorder>Notes_Frame</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>Exit_Customer_View</tabstop>
+  <tabstop>Edit_Rabbit</tabstop>
+  <tabstop>Delete_Rabbit</tabstop>
+  <tabstop>Rabbit_Notes_PleinText</tabstop>
+  <tabstop>Rabbit_Detail_Tree</tabstop>
+  <tabstop>YearSelection_Rabbit</tabstop>
+  <tabstop>Rabbit_Detail_Table_10</tabstop>
+  <tabstop>Rabbit_Detail_Table_11</tabstop>
+  <tabstop>Rabbit_Detail_Table_2</tabstop>
+  <tabstop>Rabbit_Detail_Table_8</tabstop>
+  <tabstop>Rabbit_Detail_Table_6</tabstop>
+  <tabstop>Rabbit_Detail_Table_7</tabstop>
+  <tabstop>Rabbit_Detail_Table_9</tabstop>
+  <tabstop>Rabbit_Detail_Table_4</tabstop>
+  <tabstop>Rabbit_Detail_Table_3</tabstop>
+  <tabstop>Rabbit_Detail_Table_1</tabstop>
+  <tabstop>Rabbit_Detail_Table_5</tabstop>
+  <tabstop>Rabbit_Detail_Table_12</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Exit_Customer_View</sender>
+   <signal>clicked()</signal>
+   <receiver>Rabbit_View_Main</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>955</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>501</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

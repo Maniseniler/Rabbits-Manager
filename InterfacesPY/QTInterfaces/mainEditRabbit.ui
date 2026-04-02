@@ -1,0 +1,2446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditRabbit_Main</class>
+ <widget class="QDialog" name="EditRabbit_Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>867</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>550</width>
+    <height>867</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>550</width>
+    <height>867</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>867</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>550</width>
+     <height>867</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>550</width>
+     <height>867</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(30, 30, 30);
+	color: rgb(255, 255, 255);
+	font: 75 9pt &quot;Orbitron&quot;;
+	border-style: outset;
+    	border-radius: 50px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="Rabbit_Title">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>2</y>
+      <width>450</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>450</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>450</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 15pt &quot;Acme&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Edit A Rabbit</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="Infos_Frame">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>25</y>
+     <width>500</width>
+     <height>825</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>825</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>825</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="ID_Frame">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>158</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>158</width>
+      <height>44</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>158</width>
+      <height>44</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #2F2F2F;
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="ID_Label">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>6</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>121</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>121</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>ID : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ID_Icon">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Rabbit_Tag.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Rabbit_Avatar_Frame">
+    <property name="geometry">
+     <rect>
+      <x>371</x>
+      <y>10</y>
+      <width>119</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>119</width>
+      <height>161</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>119</width>
+      <height>161</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color:rgb(167, 164, 147);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 0, 0);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="Rabbit_Avatar_Button">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>6</y>
+       <width>111</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	font: 75 15pt &quot;Acme&quot;;
+	border:none;
+}
+QPushButton:hover {
+	color: rgb(229, 255, 185);
+	font: 75 15pt &quot;Acme&quot;;
+	border:none;
+}
+
+QPushButton:pressed {
+	color: rgb(120, 133, 96);
+	font: 75 15pt &quot;Acme&quot;;
+	border:none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Click Here</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/Icons/Rabbit_White.png</normaloff>:/Icons/Rabbit_White.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Mother_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>132</y>
+      <width>341</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Mother_Icon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Rabbit_Tree_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Mother_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>11</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Mother</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Mother_Infos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>37</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The customer's phone number.  *</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="Mother_Input">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>11</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSpinBox {
+	background-color:rgb(167, 164, 147);
+	padding-left: 5px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Breed_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>54</y>
+      <width>341</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Breed_Icon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Rabbit_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Breed_Input">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>11</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+	background-color:rgb(167, 164, 147);
+	padding-left: 5px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Write Here...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Breed_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>11</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Breed</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Breed_Infos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>37</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The full name of the customer.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Gender_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>444</y>
+      <width>341</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Gender_Icon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Gender_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Gender_Input">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>11</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+	background-color:rgb(167, 164, 147);
+	padding:1px 18px 1px 3px;
+	padding-left: 15px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Null</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Gender_Null_White.png</normaloff>
+        <normalon>:/Icons/Gender_Null_Green.png</normalon>:/Icons/Gender_Null_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Male</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Gender_Male_White.png</normaloff>
+        <normalon>:/Icons/Gender_Male_Green.png</normalon>:/Icons/Gender_Male_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Female</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Gender_Female_White.png</normaloff>
+        <normalon>:/Icons/Gender_Female_Green.png</normalon>:/Icons/Gender_Female_White.png</iconset>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Gender_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>11</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>61</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>61</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Gender</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Gender_Infos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>37</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The gender of the customer</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Notes_Label_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>678</y>
+      <width>41</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>41</width>
+      <height>131</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>41</width>
+      <height>131</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #2F2F2F;
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Notes_Text_Label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>2</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;N&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Notes_Text_Label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>23</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;O&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Notes_Text_Label_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>46</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;T&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Notes_Text_Label_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>66</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;E&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Notes_Text_Label_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;S&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPlainTextEdit" name="Notes_Input">
+    <property name="geometry">
+     <rect>
+      <x>49</x>
+      <y>678</y>
+      <width>300</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>300</width>
+      <height>131</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>300</width>
+      <height>131</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPlainTextEdit{
+	background-color:rgb(167, 164, 147);
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="documentTitle">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Write Here...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Edit_Rabbit_Button">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>408</x>
+      <y>702</y>
+      <width>43</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>43</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>43</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Acme</family>
+      <pointsize>18</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_Rabbit_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_Rabbit_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_Rabbit_Green.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>50</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit_Rabbit_Button">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>408</x>
+      <y>753</y>
+      <width>43</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>43</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>43</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Acme</family>
+      <pointsize>18</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_Red.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>50</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QFrame" name="Father_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>341</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Father_Icon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Rabbit_Tree_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Father_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>11</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Father</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Father_Infos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>37</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The customer's phone number.  *</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="Father_Input">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>11</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSpinBox {
+	background-color:rgb(167, 164, 147);
+	padding-left: 5px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Color_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>288</y>
+      <width>341</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Color_Icon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Rabbit_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Color_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>11</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Color</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Color_Input">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>11</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+	background-color:rgb(167, 164, 147);
+	padding-left: 5px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
+     <property name="placeholderText">
+      <string>Write Here...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Color_Infos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>37</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The customer's phone number.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Born_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>366</y>
+      <width>341</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Born_Icon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Calendar_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Born_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>11</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>61</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>61</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Born</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Born_Infos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>37</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The gender of the customer</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="Born_Input">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>11</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDateEdit {
+	background-color:rgb(167, 164, 147);
+	padding:1px 18px 1px 3px;
+	padding-left: 15px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="dateTime">
+      <datetime>
+       <hour>0</hour>
+       <minute>0</minute>
+       <second>0</second>
+       <year>2024</year>
+       <month>8</month>
+       <day>15</day>
+      </datetime>
+     </property>
+     <property name="minimumDate">
+      <date>
+       <year>2023</year>
+       <month>9</month>
+       <day>14</day>
+      </date>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Bought">
+    <property name="geometry">
+     <rect>
+      <x>355</x>
+      <y>188</y>
+      <width>140</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>140</width>
+      <height>481</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>140</width>
+      <height>481</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: none;
+	border-style: outset;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Bought_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>10</y>
+       <width>80</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>80</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Bought</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Bought_Icon">
+     <property name="geometry">
+      <rect>
+       <x>24</x>
+       <y>10</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/TND_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Bought_Infos">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>120</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>361</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>361</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The customer's phone number.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignHCenter|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="Bought_Input">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>47</y>
+       <width>120</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox {
+	background-color:rgb(167, 164, 147);
+	padding-left: 5px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 10pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="accelerated">
+      <bool>true</bool>
+     </property>
+     <property name="prefix">
+      <string/>
+     </property>
+     <property name="suffix">
+      <string>  TND</string>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="singleStep">
+      <double>0.500000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Type_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>522</y>
+      <width>341</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Type_Icon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Rabbits_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Type_Input">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>11</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>191</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+	background-color:rgb(167, 164, 147);
+	padding:1px 18px 1px 3px;
+	padding-left: 15px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Meat</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Rabbits_White.png</normaloff>
+        <normalon>:/Icons/Rabbits_Green.png</normalon>:/Icons/Rabbits_White.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Breeding</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/Icons/Rabbits_White.png</normaloff>
+        <normalon>:/Icons/Rabbits_Green.png</normalon>:/Icons/Rabbits_White.png</iconset>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Type_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>11</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>61</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>61</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Type</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Type_Infos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>37</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The gender of the customer</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Cage_Frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>341</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>341</width>
+      <height>68</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Rabbit_Cage_Icon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>11</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>21</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Cages_White.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Rabbit_Cage_Label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>11</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>51</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Cage</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Cage_Infos">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>37</y>
+       <width>301</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 13pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>The customer's phone number.</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="Cage_Input">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>11</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSpinBox {
+	background-color:rgb(167, 164, 147);
+	padding-left: 5px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 15pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Exit_Rabbit_Button</sender>
+   <signal>clicked()</signal>
+   <receiver>EditRabbit_Main</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>794</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>433</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

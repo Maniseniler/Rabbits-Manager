@@ -1,0 +1,2999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Customer_View_Main</class>
+ <widget class="QDialog" name="Customer_View_Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1031</width>
+    <height>867</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1031</width>
+    <height>867</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1031</width>
+    <height>867</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTabWidget" name="Menu_Customer_View">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>230</y>
+     <width>887</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>887</width>
+     <height>631</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>887</width>
+     <height>631</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 75 9pt &quot;Orbitron&quot;;
+}
+QTabWidget::pane {
+    	border: none;
+	position: absolute;
+    	top: -0.5em;
+
+}
+QTabWidget::tab-bar {
+	alignment: center;
+}
+QTabBar::tab {
+	background-color: rgb(49, 49, 49);
+	color: rgb(255, 255, 255);
+   	border: 2px solid #ffffff;
+	border-radius:50px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 7px;
+	font: 75 13pt &quot;Acme&quot;;
+}
+QTabBar::tab:selected {
+	background-color: rgb(27, 27, 27);
+	color: rgb(98, 114, 90);
+	border: 1px solid #6c6c6c;
+	border-radius:50px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 7px;
+}
+QTabWidget::tab{
+	background-color: rgb(255, 255, 0);
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="Facture">
+    <attribute name="title">
+     <string>Facture</string>
+    </attribute>
+    <widget class="QFrame" name="Facture_Frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>3</y>
+       <width>887</width>
+       <height>590</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>887</width>
+       <height>590</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>887</width>
+       <height>590</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="Filter_Frame_View">
+      <property name="geometry">
+       <rect>
+        <x>197</x>
+        <y>10</y>
+        <width>494</width>
+        <height>47</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>494</width>
+        <height>47</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>494</width>
+        <height>47</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(73, 73, 73);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="FilterBy_Customer_Facture">
+       <property name="geometry">
+        <rect>
+         <x>71</x>
+         <y>7</y>
+         <width>120</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border: 2px solid white;
+	border-radius:6px;
+	padding:1px 18px 1px 3px;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;Acme&quot;;
+	padding-left: 15px;
+	selection-background-color: #2980B9;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>By</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Icons/Search.png</normaloff>:/Icons/Search.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ID</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Icons/Facture_White.png</normaloff>
+          <normalon>:/Icons/Facture_Green.png</normalon>:/Icons/Facture_White.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Date</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Icons/Facture_White.png</normaloff>
+          <normalon>:/Icons/Facture_Green.png</normalon>:/Icons/Facture_White.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Total</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Icons/Facture_White.png</normaloff>
+          <normalon>:/Icons/Facture_Green.png</normalon>:/Icons/Facture_White.png</iconset>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="Ordre_Customer_Facture">
+       <property name="geometry">
+        <rect>
+         <x>18</x>
+         <y>7</y>
+         <width>43</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>43</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>43</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Orbitron</family>
+         <pointsize>9</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Mix.png);
+}
+QPushButton:checked:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Mix.png);
+}
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Green.png);
+}
+QPushButton:checked{
+	border-style: outset;
+    	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Green.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>50</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>10</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Search_Customer_Facture">
+       <property name="geometry">
+        <rect>
+         <x>201</x>
+         <y>7</y>
+         <width>275</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>275</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>275</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	background-color:rgba(0, 0, 0, 0);
+	padding-left: 30px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-image: url(:/Icons/Search.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 10pt &quot;Acme&quot;;
+}</string>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Search Facture...</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="FactureTabs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>65</y>
+        <width>867</width>
+        <height>520</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>867</width>
+        <height>520</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>867</width>
+        <height>520</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: none;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="View">
+       <attribute name="title">
+        <string>View</string>
+       </attribute>
+       <widget class="QFrame" name="Frame_Customer_Facture_Advanced_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>3</y>
+          <width>861</width>
+          <height>475</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>861</width>
+          <height>475</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>861</width>
+          <height>475</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QScrollArea" name="Customer_FactureScrollBar">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>5</y>
+           <width>851</width>
+           <height>465</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>851</width>
+           <height>465</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>851</width>
+           <height>465</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="SrollWidget_CustomerFactureScrollBar">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>847</width>
+            <height>461</height>
+           </rect>
+          </property>
+          <widget class="QWidget" name="gridLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>831</width>
+             <height>441</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="GridLayout_Customer_Facture_View"/>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Advanced">
+       <attribute name="title">
+        <string>Advanced</string>
+       </attribute>
+       <widget class="QTableWidget" name="FacturesCustomesTable_Advanced">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>841</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>841</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>841</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QHeaderView::section{
+	font: 75 13pt &quot;Acme&quot;;
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border: 2px solid rgb(167, 164, 147);
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+QHeaderView::section:checked
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+}
+QTableWidget{
+	color: rgb(0, 0, 0);
+	font: 75 13pt &quot;Acme&quot;;
+	background-color:rgb(167, 164, 147);
+	alternate-background-color: rgb(176, 237, 251);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="tabKeyNavigation">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>205</number>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Customer_Whitre.png</normaloff>
+           <normalon>:/Icons/Customer_Green.png</normalon>:/Icons/Customer_Whitre.png</iconset>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Date</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Calendar_White.png</normaloff>
+           <normalon>:/Icons/Calendar_Green.png</normalon>:/Icons/Calendar_White.png</iconset>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Total</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/TND_White.png</normaloff>
+           <normalon>:/Icons/TND_Green.png</normalon>:/Icons/TND_White.png</iconset>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Actions</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/Icons/Actions_White.png</normaloff>
+           <normalon>:/Icons/Actions_Green.png</normalon>:/Icons/Actions_White.png</iconset>
+         </property>
+        </column>
+       </widget>
+       <widget class="QFrame" name="ToolsFrame_Advanced">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>420</y>
+          <width>841</width>
+          <height>47</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>841</width>
+          <height>47</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>841</width>
+          <height>47</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color:rgb(167, 164, 147);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="Exporting_Frame">
+         <property name="geometry">
+          <rect>
+           <x>709</x>
+           <y>0</y>
+           <width>132</width>
+           <height>47</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>47</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>47</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(73, 73, 73);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="Export_PDF_Customers">
+          <property name="geometry">
+           <rect>
+            <x>71</x>
+            <y>7</y>
+            <width>43</width>
+            <height>33</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>43</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>43</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Orbitron</family>
+            <pointsize>9</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>ArrowCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/PDF_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image:url(:/Icons/PDF_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image:url(:/Icons/PDF_Green.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>50</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>10</number>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Export_Exel_Customers">
+          <property name="geometry">
+           <rect>
+            <x>18</x>
+            <y>7</y>
+            <width>43</width>
+            <height>33</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>43</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>43</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Orbitron</family>
+            <pointsize>9</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>ArrowCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exel_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exel_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image:url(:/Icons/Exel_Green.png);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>50</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>10</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="Exportation_CustomerFacture_Info">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>3</y>
+           <width>681</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgbrgb(0, 174, 255);
+font: 75 12pt &quot;Acme&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Boughts">
+    <attribute name="title">
+     <string>Boughts</string>
+    </attribute>
+    <widget class="QFrame" name="Advanced_Frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>3</y>
+       <width>887</width>
+       <height>590</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>887</width>
+       <height>590</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>887</width>
+       <height>590</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QTabWidget" name="Boughts_Tabs">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>5</y>
+        <width>860</width>
+        <height>565</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>860</width>
+        <height>565</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>820</width>
+        <height>565</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: none;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Rabbits">
+       <attribute name="title">
+        <string>Rabbits</string>
+       </attribute>
+       <widget class="QFrame" name="Frame_CustomerRabbits_Facture_Advanced">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>66</y>
+          <width>850</width>
+          <height>465</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>850</width>
+          <height>465</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>850</width>
+          <height>465</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QScrollArea" name="Customer_Rabbits_FactureScrollBar">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>5</y>
+           <width>840</width>
+           <height>455</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>840</width>
+           <height>455</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>840</width>
+           <height>455</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="Customer_Rabbits_FactureScrollBar_Content_7">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>836</width>
+            <height>451</height>
+           </rect>
+          </property>
+          <widget class="QWidget" name="gridLayoutWidget_7">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>821</width>
+             <height>431</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="GridLayout_Customer_Rabbits_FactureView"/>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="Filter_Frame_View_2">
+        <property name="geometry">
+         <rect>
+          <x>131</x>
+          <y>10</y>
+          <width>620</width>
+          <height>47</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>620</width>
+          <height>47</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>620</width>
+          <height>47</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color: rgb(73, 73, 73);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QComboBox" name="FilterGender_Rabbits">
+         <property name="geometry">
+          <rect>
+           <x>71</x>
+           <y>7</y>
+           <width>123</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>123</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>123</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox{
+	border: 2px solid white;
+	border-radius:6px;
+	padding:1px 18px 1px 3px;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;Acme&quot;;
+	padding-left: 15px;
+	selection-background-color: #2980B9;
+}</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Gender</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Gender_White.png</normaloff>
+            <normalon>:/Icons/Gender_Green.png</normalon>:/Icons/Gender_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Null</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Gender_Null_White.png</normaloff>
+            <normalon>:/Icons/Gender_Null_Green.png</normalon>:/Icons/Gender_Null_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Male</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Gender_Male_White.png</normaloff>
+            <normalon>:/Icons/Gender_Male_Green.png</normalon>:/Icons/Gender_Male_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Female</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Gender_Female_White.png</normaloff>
+            <normalon>:/Icons/Gender_Female_Green.png</normalon>:/Icons/Gender_Female_White.png</iconset>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="Ordre_Rabbits">
+         <property name="geometry">
+          <rect>
+           <x>18</x>
+           <y>7</y>
+           <width>43</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>43</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>43</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Orbitron</family>
+           <pointsize>9</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Mix.png);
+}
+QPushButton:checked:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Mix.png);
+}
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Green.png);
+}
+QPushButton:checked{
+	border-style: outset;
+    	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Green.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+         <property name="autoRepeatDelay">
+          <number>50</number>
+         </property>
+         <property name="autoRepeatInterval">
+          <number>10</number>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Search_Rabbits">
+         <property name="geometry">
+          <rect>
+           <x>331</x>
+           <y>7</y>
+           <width>275</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>275</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>275</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	background-color:rgba(0, 0, 0, 0);
+	padding-left: 30px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-image: url(:/Icons/Search.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 10pt &quot;Acme&quot;;
+}</string>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Search Rabbit...</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="FilterBy_Rabbits">
+         <property name="geometry">
+          <rect>
+           <x>201</x>
+           <y>7</y>
+           <width>120</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox{
+	border: 2px solid white;
+	border-radius:6px;
+	padding:1px 18px 1px 3px;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;Acme&quot;;
+	padding-left: 15px;
+	selection-background-color: #2980B9;
+}</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>By</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Search.png</normaloff>:/Icons/Search.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ID</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Rabbit_Tag.png</normaloff>
+            <normalon>:/Icons/Rabbit_Tag.png</normalon>:/Icons/Rabbit_Tag.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Breed</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Rabbit_Tag.png</normaloff>
+            <normalon>:/Icons/Rabbit_Tag.png</normalon>:/Icons/Rabbit_Tag.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Born</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Calendar_White.png</normaloff>
+            <normalon>:/Icons/Calendar_Green.png</normalon>:/Icons/Calendar_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Color</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Rabbit_White.png</normaloff>
+            <normalon>:/Icons/Rabbit_Green.png</normalon>:/Icons/Rabbit_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Mother</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Rabbit_Tree_White.png</normaloff>
+            <normalon>:/Icons/Rabbit_Tree_Green.png</normalon>:/Icons/Rabbit_Tree_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Father</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Rabbit_Tree_White.png</normaloff>
+            <normalon>:/Icons/Rabbit_Tree_Green.png</normalon>:/Icons/Rabbit_Tree_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Generation</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Rabbit_Tree_White.png</normaloff>
+            <normalon>:/Icons/Rabbit_Tree_Green.png</normalon>:/Icons/Rabbit_Tree_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Type</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Settings_White.png</normaloff>
+            <normalon>:/Icons/Settings_White.png</normalon>:/Icons/Settings_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>CageID</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Cages_White.png</normaloff>
+            <normalon>:/Icons/Cages_Green.png</normalon>:/Icons/Cages_White.png</iconset>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Cages">
+       <attribute name="title">
+        <string>Cages</string>
+       </attribute>
+       <widget class="QFrame" name="Frame_CustomerCages_Advanced">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>66</y>
+          <width>850</width>
+          <height>465</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>850</width>
+          <height>465</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>850</width>
+          <height>465</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QScrollArea" name="Customer_CagesScrollBar">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>5</y>
+           <width>840</width>
+           <height>455</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>840</width>
+           <height>455</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>840</width>
+           <height>455</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(143, 143, 143);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="Customer_CagesScrollBar_Content">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>836</width>
+            <height>451</height>
+           </rect>
+          </property>
+          <widget class="QWidget" name="gridLayoutWidget_8">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>821</width>
+             <height>441</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="GridLayout_Customer_Cages_View"/>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="Filter_Frame_View_3">
+        <property name="geometry">
+         <rect>
+          <x>131</x>
+          <y>10</y>
+          <width>620</width>
+          <height>47</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>620</width>
+          <height>47</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>620</width>
+          <height>47</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color: rgb(73, 73, 73);
+	color: rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QComboBox" name="FilterBy_Cages">
+         <property name="geometry">
+          <rect>
+           <x>201</x>
+           <y>7</y>
+           <width>120</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox{
+	border: 2px solid white;
+	border-radius:6px;
+	padding:1px 18px 1px 3px;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;Acme&quot;;
+	padding-left: 15px;
+	selection-background-color: #2980B9;
+}</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>By</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Search.png</normaloff>:/Icons/Search.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ID</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Cages_White.png</normaloff>
+            <normalon>:/Icons/Cages_Green.png</normalon>:/Icons/Cages_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Sold</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/TND_White.png</normaloff>
+            <normalon>:/Icons/TND_Green.png</normalon>:/Icons/TND_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Bought</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/TND_White.png</normaloff>
+            <normalon>:/Icons/TND_Green.png</normalon>:/Icons/TND_White.png</iconset>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="Ordre_Cages">
+         <property name="geometry">
+          <rect>
+           <x>18</x>
+           <y>7</y>
+           <width>43</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>43</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>43</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Orbitron</family>
+           <pointsize>9</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_White.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Mix.png);
+}
+QPushButton:checked:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Mix.png);
+}
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Green.png);
+}
+QPushButton:checked{
+	border-style: outset;
+    	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Order_Green.png);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+         <property name="autoRepeatDelay">
+          <number>50</number>
+         </property>
+         <property name="autoRepeatInterval">
+          <number>10</number>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Search_Cages">
+         <property name="geometry">
+          <rect>
+           <x>331</x>
+           <y>7</y>
+           <width>275</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>275</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>275</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+	background-color:rgba(0, 0, 0, 0);
+	padding-left: 30px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-image: url(:/Icons/Search.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font: 75 10pt &quot;Acme&quot;;
+}</string>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Search Facture...</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="FilterGender_Cages">
+         <property name="geometry">
+          <rect>
+           <x>71</x>
+           <y>7</y>
+           <width>123</width>
+           <height>33</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>123</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>123</width>
+           <height>33</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox{
+	border: 2px solid white;
+	border-radius:6px;
+	padding:1px 18px 1px 3px;
+	background-color: rgba(0, 0, 0, 0);
+	color: rgb(255, 255, 255);
+	font: 75 12pt &quot;Acme&quot;;
+	padding-left: 15px;
+	selection-background-color: #2980B9;
+}</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Gender</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Gender_White.png</normaloff>
+            <normalon>:/Icons/Gender_Green.png</normalon>:/Icons/Gender_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Male</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Gender_Male_White.png</normaloff>
+            <normalon>:/Icons/Gender_Male_Green.png</normalon>:/Icons/Gender_Male_White.png</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Female</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/Icons/Gender_Female_White.png</normaloff>
+            <normalon>:/Icons/Gender_Female_Green.png</normalon>:/Icons/Gender_Female_White.png</iconset>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="Infos_Frame">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>42</y>
+     <width>831</width>
+     <height>207</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>831</width>
+     <height>207</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>831</width>
+     <height>207</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: #5C5C5C;
+	color: rgb(255, 255, 255);
+	font: 75 18pt &quot;Acme&quot;;
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="ID_Frame">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>158</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>158</width>
+      <height>44</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>158</width>
+      <height>44</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #2F2F2F;
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="ID_Label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>6</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>121</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>121</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>ID : </string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Customer_Name_Label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>51</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>311</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>311</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 15pt &quot;Acme&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Name : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Customer_Phone_Label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>86</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>141</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>141</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 15pt &quot;Acme&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Phone : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Customer_Gender_Label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>121</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>181</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>181</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 15pt &quot;Acme&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Gender : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Customer_Address_Label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>159</y>
+      <width>681</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>211</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>681</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 15pt &quot;Acme&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Address : </string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="Customer_Avatar_Frame">
+    <property name="geometry">
+     <rect>
+      <x>703</x>
+      <y>10</y>
+      <width>119</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>119</width>
+      <height>161</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>119</width>
+      <height>161</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #D9D9D9;
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 0, 0);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Customer_Avatar_Label">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>10</y>
+       <width>101</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/Icons/Customer_Green.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Customer_Name_Icon">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>51</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>21</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>21</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/Icons/Customer_Whitre.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Customer_Phone_Icon">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>86</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>21</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>21</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/Icons/Phone_White.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Customer_Gender_Icon">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>121</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>21</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>21</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/Icons/Gender_White.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Customer_Address_Icon">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>159</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>21</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>21</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/Icons/Address_White.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="Customer_Notes_PleinText">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>10</y>
+      <width>251</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>251</width>
+      <height>131</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>251</width>
+      <height>131</height>
+     </size>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>UpArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPlainTextEdit{
+	background-color: rgb(69, 69, 69);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(255, 255, 255);
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="Notes_Label_Frame">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>41</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>41</width>
+      <height>131</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>41</width>
+      <height>131</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #2F2F2F;
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Notes_Text_Label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>2</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;N&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Notes_Text_Label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>23</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;O&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Notes_Text_Label_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>46</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;T&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Notes_Text_Label_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>66</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;E&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Notes_Text_Label_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 18pt &quot;Acme&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Acme'; font-size:18pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;S&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="Activity_Frame">
+   <property name="geometry">
+    <rect>
+     <x>913</x>
+     <y>42</y>
+     <width>46</width>
+     <height>207</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(48, 48, 48);
+	color: rgb(255, 255, 255);
+	border: 2px solid #ffffff;
+	border-style: outset;
+    	border-radius: 20px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="Exit_Customer_View">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>20</y>
+      <width>33</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Orbitron</family>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_Red.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Exit_White.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>50</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Edit_Customer">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>83</y>
+      <width>33</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Orbitron</family>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_Blue.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Edit_White.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>50</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Delete_Customer">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>146</y>
+      <width>33</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Orbitron</family>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Delete_Pink.png);
+}
+QPushButton:hover {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Delete_Mix.png);
+}
+
+QPushButton:pressed {
+	border: none;
+	background-color:rgba(0, 0, 0, 0);
+	image: url(:/Icons/Delete_White.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Del</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>50</number>
+    </property>
+    <property name="autoRepeatInterval">
+     <number>10</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1031</width>
+     <height>867</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1031</width>
+     <height>867</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1031</width>
+     <height>867</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: rgb(30, 30, 30);
+	color: rgb(255, 255, 255);
+	font: 75 9pt &quot;Orbitron&quot;;
+	border-style: outset;
+    	border-radius: 50px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>961</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>301</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgba(0, 0, 0, 0);
+color: rgb(255, 255, 255);
+font: 75 15pt &quot;Acme&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Customer Viewer Window</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <zorder>Background</zorder>
+  <zorder>Infos_Frame</zorder>
+  <zorder>Activity_Frame</zorder>
+  <zorder>Menu_Customer_View</zorder>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Exit_Customer_View</sender>
+   <signal>clicked()</signal>
+   <receiver>Customer_View_Main</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>955</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>501</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
